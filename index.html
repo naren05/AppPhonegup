@@ -17,14 +17,14 @@
 		<ul data-role="listview">
 			<li><a href="#page2" onClick="chispi()">PICANTES</a></li>
             <li><a href="#page3" onClick="jaimi()">JAIMITO</a></li>
-			<li><a href="#page4">BORRACHOS</a></li>
+			<li><a href="#page4" onClick="borrachi()">BORRACHOS</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
 		<h4>NAREN AVILA</h4>
 	</div>
     
-<img src="jquery-mobile/images/logo3.png" width="210" height="210"> </div>
+<img src="jquery-mobile/images/logo3.png" width="210" height="210" align="top"> </div>
 
 <div data-role="page" id="page2">
 	<div data-role="header">
@@ -35,10 +35,11 @@
 				
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
-        <span class="atras" onClick="chispi()"></span>
+		<h4>NAREN AVILA</h4>  
+        <span class="atras" onClick="chispi()"></span>   
+        
 	</div>
-</div>
+<img src="jquery-mobile/images/logo3.png" width="210" height="210"> </div>
 
 <div data-role="page" id="page3">
 	<div data-role="header">
@@ -49,8 +50,8 @@
 				
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
-        <span class="atras" onClick="chispi()"></span>
+		<h4>NAREN AVILA</h4>
+        <span class="atras" onClick="jaimi()"></span>
 	</div>
 </div>
 
@@ -59,14 +60,16 @@
 		<h1>CHISTES DE BORRACHOS</h1>
         <span ><a href="#page" class="atras"></a></span>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content" id="chisteborracho">	
+				
 	</div>
 	<div data-role="footer">
-		<h4>Pie de página</h4>
-        <span class="atras" onClick="chispi()"></span>
+		<h4>NAREN AVILA</h4>
+        <span class="atras" onClick="borrachi()"></span>
+        
 	</div>
-</div>
+    
+<img src="jquery-mobile/images/logo3.png" width="210" height="210"> </div>
 
 </body>
 </html>
@@ -81,9 +84,9 @@ function chispi(){
 	}		
 </script>
 
-<script>
+<script type="text/javascript">
 
-var jaimito = ["Mamá, ¿los corazones tienen patitas? <br>No, Jaimito. <br>¿Entonces por qué te dice papá por las noches: “Ábrete de patitas corazón”?"," Mamá, ¿por qué no le dejas a papá usar la puerta de servicio? <br>¿De dónde sacas eso Jaimito? <br>Como en las noches le dices que por atrás no…"," Mamá, ¿verdad que tú no quieres que mi papá haga deporte en casa?<br>¿Por qué dices eso, Jaimito? <br>Como en las noches le dices: “No te corras dentro…" ];
+var jaimito = ["Mamá, ¿los corazones tienen patitas? <br>No, Jaimito. <br>¿Entonces por qué te dice papá por las noches: “Ábrete de patitas corazón”?"," Mamá, ¿por qué no le dejas a papá usar la puerta de servicio? <br>¿De dónde sacas eso Jaimito? <br>Como en las noches le dices que por atrás no…"," Mamá, ¿verdad que tú no quieres que mi papá haga deporte en casa?<br>¿Por qué dices eso, Jaimito? <br>Como en las noches le dices: “No te corras dentro…","La profesora le pregunya a Jaimito:<br> - Jaimito, Jaimito, dime los tres barcos de Colón.<br> A esto, Jaimito se asoma por la ventana porque pasaba un bellezón de mujer y suelta  <br> - ¡Santa María qué Pinta tiene esa Niña!.","Llega la profesora de Jaimito a clase y dice:<br> - A ver, quiero que me digáis cosas que sean redondas y con pelos. Fernandito responde:<br> - Las pelotas de tenis.<br> - Muy bien - dice la profesora -. A ver tú, Pepito.<br> - Los cocos, señorita.<br> - Muy bien, muy bien.<br> A eso que Jaimito alza la mano.<br> - A ver Jaimito, dime.<br> - Las pelotas de billar.<br> - Jaimito, las pelotas de billar son redondas pero no tienen pelo.<br> Y dice Jaimito:<br> - ¿Cómo que no?. A ver, Billar, enséñale las pelotas a la profesora.","En la escuela, le dice la profesora a Jaimito:<br> - A ver, Jaimito, ¿qué me dices de la muerte de Napoleón?.<br> Y Jaimito contesta:<br> - Que lo siento mucho, señorita.","La maestra le pide a Jaimito que dibuje un huevo. Él empieza a dibujar y se mete la otra mano en el bolsillo, entonces una de las compañeritas grita:<br> - Señorita, ¡Jaimito esta copiando!","El cura le dice a Jaimito en el confesionario:<br> - Jaimito, ¿quién está robando el dinero del cepillo de los domingos?.<br> - Padre, no le oigo nada.<br> - No te hagas el sordo Jaimito, sé que me escuchas.<br> - ¿Qué, padre?, ¿qué dice?.<br> - Jaimito, ¿fuiste tú quien lo robó?.<br> - Padre, no le oigo.<br> - Jaimito, ponte en este lado y me preguntas tú. Así te demostraré que sí que se oye.<br> - De acuerdo, padre.<br> Se cambian de posición, y Jaimito le pregunta al cura:<br> - Padre, ¿quién se está tirando a la hija del panadero de la esquina?.<br> - Pues es verdad que no se oye nada de nada...","Jaimito le dice a su padre:<br> - ¡Papá, papá, tengo una noticia buena y otra mala!.<br> - ¿Cuál es la buena Jaimito?.<br> - ¡Que las he aprobado todas!.<br> - Muy bien, hijo. ¿Y la mala?.<br> - ¡Que es mentira!." ];
 
 function jaimi(){
 	aleatorio = Math.floor(Math.random()*(jaimito.length)); 
@@ -91,5 +94,20 @@ function jaimi(){
 	document.getElementById("chistejaimito").innerHTML = seleccion;
 	}
 
+
+</script>
+
+<script type="text/javascript">
+
+var borracho = ["Un niño le pregunta a su padre muy interesado.<br> - Papá, ¿cómo se sabe que una persona está borracha?.<br> - Pues fácil hijo, ¿ves esos dos hombres que vienen por ahí?. ¡Si yo estuviera borracho vería cuatro!.<br> - Papá, ¡si sólo viene uno!. ","Un borracho va a Alcohólicos Anónimos y le preguntan:<br> - ”¿Vino solo?”.<br> - No…con hielo por favor."," ¿Cuál es la diferencia entre un árbol y un borracho?.<br> Que el árbol empieza en el suelo y termina en la copa. En cambio, el borracho comienza en la copa y acaba en el suelo.","Estaban dos borrachos en un bar y uno le pregunta al otro:<br> - Oiga compadre, hip, ¿por qué a usted le gusta tomar?.<br> Y el otro le contesta:<br> - Pos para verme más guapo, bello, y hermoso.<br> El primer borracho vuelve a preguntar:<br> - Y, ¿por qué dice que se ve más guapo, bello y hermoso?.<br> - Pos, porque cuando llego a mi casa mi mujer me dice, muy bonito, muy bonito.","Va un borracho en moto y choca con una señal de tránsito. Entonces llega el policía y le pregunta:<br> - ¿Señor, no vio la flecha?.<br> El borracho responde:<br> - Ni al indio que me la tiró.","Esto son dos que iban súper borrachos en un bar a punto de cerrar:<br> - Oye, ¿por qué no vamos a mi casa para seguir con la juerga?.<br> - No, mejor a la mía, que está cerquita.<br> - A ver, veamos cuál está más cerca.<br> LLegan a la esquina, se detienen y dicen:<br> - Ya llegamos, esta es mi casa.<br> - No puede ser, también es la mía.<br> - Llamaremos. Así sabremos de quién es.<br> Llaman a la puerta, sale la dueña y dice:<br> - ¡Muy bonito, padre e hijo borrachos!.","El marido, totalmente borracho, le dice a su mujer al acostarse:<br> - Me ha sucedido un misterio. He ido al baño y al abrir la puerta se ha encendido la luz automáticamente.<br> - ¡La madre que te parió!. ¡Ya te has vuelto a mear en la nevera!.","Va un borracho y se mea en la cabeza de un gato, a lo que el gato dice:<br> - Miao, miao.<br> El borracho replica:<br> - Pues claro que es miao, a ver si te crees que es whisky.","Entra un borracho a su casa todo manchado con lápiz labial por todos lados hecho un desastre, y la mujer le pregunta:<br> - ¿Pero qué te pasó?.<br> Y el borracho le responde:<br> - ¡No me vas a creer, me peleé con un payaso!.","Un borracho va a un bar y al llegar patea la puerta y dice:<br> - Sois todos unos mal nacidos.<br> Al momento se para un negro y dice: - ¿Qué dijiste?.<br> Y lo despedaza a golpes.<br> Después de un mes ya recuperado el borracho regresa al bar y antes de volver a patear la puerta se acuerda del negro y dice:<br> - Sois todos unos mal nacidos, menos el negro.<br> De pronto se para el negro y dice: - A mí nadie me discrimina.<br> ¡¡¡y lo volvió a despedazar!!!","Un borracho le pregunta a otro:<br> - Cuando llegas a casa en este estado, ¿tu mujer te pega como a mí?.<br> A lo que el otro responde:<br> - No, me hace el exorcista.<br> - Ah, ¿y eso cómo es?.<br> - Pues ella me echa un sermón y yo le vomito.","Esto es un borracho que sube a su coche y exclama con cara de espanto:<br> - ¡El volante, me han robado el volante!<br> Y su mujer, sin inmutarse, le responde:<br> -¿Y por qué no pruebas a buscarlo en el asiento delantero?","Un tipo en un bar pide una cerveza. El camarero pone el posavasos, el vaso y la cerveza. Al rato vuelve a pedir otra cerveza. Se la sirve de igual manera, con otro posavasos. Momentos después pide la tercera cerveza y dice:<br> - Camarero, otra cerveza, pero por favor, esta vez sin galletita, que están un poco rancias.","Esto son dos amigos que se encuentran, y uno le dice al otro:<br> - Mi mujer, querido compañero, se pasa todas las noches de bar en bar.<br> A lo que el otro responde:<br> - Cuánto lo siento, ¿bebe mucho?.<br> - No, me busca.","Un amigo le dice a otro:<br> - ¿Sabes que Juan murió de alcoholismo?.<br> - ¿Tanto bebía?.<br> - Ya ves... lo incineraron hace un mes y todavía está ardiendo..."," Un borracho entra a su casa a las 3 de la mañana, y su esposa, que lo está esperando le dice:<br> - ¡Mira, desgraciado, borracho, a la hora que vienes llegando!<br> - ¿Y quién te dijo que vengo llegando?, vine a buscar mi guitarra.","Esto es un borracho que le dice a otro:<br> - Deja de beber que te estás poniendo borroso.","El marido llega a casa con una copa de más, y a la esposa no le hace mucha gracia.<br> - ¿Qué es esto de llegar a casa medio borracho?.<br> - No es culpa mia, se me acabó el dinero en mitad de la juerga." ]
+
+function borrachi(){
+	
+	aleatorio = Math.floor(Math.random()*(borracho.length)); 
+	seleccion = borracho[aleatorio];
+	document.getElementById("chisteborracho").innerHTML = seleccion;
+	
+	
+	}
 
 </script>
