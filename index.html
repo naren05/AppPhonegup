@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>CHISTES</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>NAREN DAYARDANI<br>AVILA SALDARRIAGA</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2" onClick="chispi()">Picantes</a></li>
+            <li><a href="#page3" onClick="jaimi()"> Pepito</a></li>
+			<li><a href="#page4">Borrachos</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>CHISTES PICANTES</h1>
+        <span ><a href="#page" class="atras"></a></span>
+	</div>
+	<div data-role="content" id="chistepicante">	
+				
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+        <span class="atras" onClick="chispi()"></span>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content" id="chistejaimito">	
+				
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Página cuatro</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+var chipican = ["Una hermosa rubia en topless va a comulgar a una iglesia. El cura confundido le dice:<br>Así no puede...<br>Padre, ¿acaso no tengo el derecho divino?<br> Y el izquierdo también, pero así no puede comulgar","Mamá, mamá ¿como fui concebido yo?<br>Sabía que un día lo preguntarías... Te explicaré: tu padre planto una semilla, la regamos con mucha dedicación, y cuando la mata creció, cogimos la marihuana, nos la fumamos, tu padre me violó contra la pared y ahí quedaste concebido...","Oye ¿tu amas a tu mujer?<br>Si con toda mi alma...<br>Entonces, ¿porque sales con otras?<br>Para no gastar la mía...","¡Oiga estúpido!  ¿Por qué me besa?<br>Es que soy de los que besa en la primera cita...<br>Si, pero esta es una cita médica","Dos borrachos hablando en el bar.<br>¿Sabes? anoche llegué a mi casa a las 12 de la noche y mi mujer me dio 12 garrotazos... uno por cada campanada del reloj... pero hoy pienso llegar a la una de la mañana.<br>¿Estás loco? Si por llegar a las 12 te dio 12 garrotazos, que piensa que te hará por llegar a la una de la mañana.<br>A la una habrá una sola campanada, y será un solo garrotazo...","Mamá, ¿crees que algún día seré Miss Universo?<br>¡No! eso no será jamás<br>Pero, ¿Por qué no mami?<br>¿Porque NO Carlos!","Pedro ¿qué te pasó en la cara?<br>Que mi mujer me pego porque le cogí un pecho...<br>¿Se enojó porque le cogiste un pecho? ¿Después de tantos años de casados?<br>Es que se lo cogí con la puerta del carro...","Una mujer le pregunta a su inocente amiga recién casada:<br>¿Como pasaste la noche de bodas?<br>Asustada... es que mi marido tiene los huevos como cocos...<br>¿Así de grandes?<br>¡No! Así de peludos.","Un amigo le dice a Jaimito:<br>Los adultos siempre tienen secretos y se asustan cuando uno les dice que los sabe..Jaimito se queda pensando y cuando llega a casa le dice al papá:<br>Papá, ¡Lo se todo!El papá se asusta, saca un billete de $500 y le dice:<br>Toma esto y no se lo cuentes a nadie.Jaimito entiende que es un gran negocio y va donde la mamá y le dice:<br>Mamá, ¡Lo se todo!La mamá saca un billete de $1000 y le dice:<br>Toma este dinero y no se lo cuentes a nadie.Cuando llega el cartero Jaimito le abre y le dice:<br>Oiga, ¡Lo se todo!El cartero suelta todas las cartas, se arrodilla frente al niño y sollozando dice:<br>¡Hijo Mío!","Luego de la noche de bodas ella empieza a ponerse sentimental. <br>Amor me siento muy rara... ¡¡tengo ganas de llorar!! <br>Comprendo como te sientes <br>Le dice el marido.<br>Sabrás que es mi primera vez... <br>dice compungida la mujer<br>¿La primera vez que haces el amor?<br>No ¡¡¡Es la primera que lo hago sin COBRAR!!!!","Llega un borracho al médico y  el doctor le dice: <br>Mire señor, usted tiene que dejar de beber. Mire lo que le pasa a esta lombriz cuando la meto en agua! ¡nada!. Y ahora mira lo que pasa cuando la meto en whisky, ¡Se muere la infeliz lombriz! ¿Sabe que significa esto? <br>Si doctor, eso significa que si bebo mucho whisky, nunca tendré lombrices!!"];
+
+function chispi(){
+	aleatorio = Math.floor(Math.random()*(chipican.length)); 
+	seleccion = chipican[aleatorio];
+	document.getElementById("chistepicante").innerHTML = seleccion;
+	}		
+</script>
+
+<script>
+
+var jaimito = ["Mamá, ¿los corazones tienen patitas? <br>No, Jaimito. <br>¿Entonces por qué te dice papá por las noches: “Ábrete de patitas corazón”?"," Mamá, ¿por qué no le dejas a papá usar la puerta de servicio? <br>¿De dónde sacas eso Jaimito? <br>Como en las noches le dices que por atrás no…"," Mamá, ¿verdad que tú no quieres que mi papá haga deporte en casa?<br>¿Por qué dices eso, Jaimito? <br>Como en las noches le dices: “No te corras dentro…" ];
+
+function jaimi(){
+	aleatorio = Math.floor(Math.random()*(jaimito.length)); 
+	seleccion = jaimito[aleatorio];
+	document.getElementById("chistejaimito").innerHTML = seleccion;
+	}
+
+
+</script>
